@@ -1,8 +1,14 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdbool.h>
+#include <unistd.h>
+#include <arpa/inet.h>
+#include <netinet/in.h>
+#include <sys/socket.h>
+#include <sys/types.h>
+#include <ctype.h>
 
-#define SIZE_FOR_STRINGS 100;
+#define SIZE_FOR_STRINGS 100
 
 typedef struct Student {
     unsigned int id;
